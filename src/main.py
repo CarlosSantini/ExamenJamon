@@ -23,3 +23,4 @@ if __name__ == "__main__":
     y_predict = training(X_train, y_test, X_test, 'RandomForest')
 
     save_calificaciones_csv(jamones_calificar, y_predict)
+
