@@ -1,7 +1,7 @@
 import pandas as pd
 from src import config
-from feature_processing import feature_process
-from train import training
+from src.feature_processing import feature_process
+from src.train import training
 
 
 def save_calificaciones_csv(file, scores):
@@ -18,9 +18,9 @@ if __name__ == "__main__":
     X_train, y_test, X_test = feature_process(jamones_calificar, score_jamonosidad)
 
     '''
-    "DecisionTrees"; "RandomForest" 
+    "NaiveBayes"; "DecisionTrees"; "RandomForest" 
     '''
-    y_predict = training(X_train, y_test, X_test, 'RandomForest')
+    y_predict = training(X_train, y_test, X_test, 'NaiveBayes')
 
     save_calificaciones_csv(jamones_calificar, y_predict)
 

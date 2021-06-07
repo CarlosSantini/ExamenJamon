@@ -10,11 +10,13 @@ from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 # from xgboost import XGBClassifier
+from sklearn.naive_bayes import GaussianNB
 
 
 def training(X_train, y_train, X_test, select_model):
 
     MODELS = {
+        "NaiveBayes": GaussianNB(),
         "DecisionTrees": DecisionTreeClassifier(max_depth=5),
         "RandomForest": RandomForestClassifier(max_depth=None, n_estimators=10, max_features=1)
     }
