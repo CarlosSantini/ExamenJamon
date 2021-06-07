@@ -2,7 +2,7 @@
 Segundo desafío de examen para TrueHome
 
 # Como ejecutar el codigo
-El script ejecutable "main.py" se encuentra en la carpeta: "ExamenJamon/src/main.py"
+El script ejecutable "main.py" se encuentra en la carpeta: "ExamenJamon/main.py"
 
 # Ver archivo "jamones_por_calificar.csv"
 Este archivo contiene las calificaciones de los jamones (no calificados).  
